@@ -93,3 +93,10 @@ To make this agent run automatically, you need to add a new job to your `crontab
 Save and close the crontab file. Your agent is now scheduled to run!
 
 ### 4.Configuration: Change in `main.py` 
+
+In the `main.py` you will see:
+```bash
+  sender = ""
+recipients = [""]
+```
+You need to change the sender and recipeients with the gmail u want to send from and to who
