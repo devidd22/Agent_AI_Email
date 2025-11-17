@@ -11,8 +11,8 @@ with open('afisare_prompt.html', "r", encoding='utf-8') as f:
     data = f.read()
 subject = f"Informatii Articole AI pt: {datetime.today().strftime('%Y-%m-%d')}"
 html_body = data
-sender = "devid.mihail@gmail.com"
-recipients = ["seful2168@gmail.com"]
+sender = "" //who u want to send
+recipients = [""] // to who u want to send
 password = "hjcm muvo jizw leuc "
 
 send_email(subject, html_body, sender, recipients, password)
