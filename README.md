@@ -48,3 +48,20 @@ With your virtual environment active, install the required packages:
 
 ```bash
 pip install requests beautifulsoup4 google-generativeai python-dotenv htmldate
+```
+### 3.Configuration:Add your API key
+
+This agent uses a Google Gemini API.You will need to provide an API key
+
+1. **Get your key:** You can generate a free API key from <a href="https://ai.google.dev/gemini-api/docs/api-key">Google AI Studio"</a>
+2.  **Create a `.env` file:** In the root of your project directory, create a file named `.env`.
+
+    ```bash
+    touch .env
+    ```
+
+3.  **Add your key:** Open the `.env` file and add the following line, replacing `YOUR_API_KEY_HERE` with your actual key:
+
+    ```ini
+    GEMINI_API_KEY="YOUR_API_KEY_HERE"
+    ```
