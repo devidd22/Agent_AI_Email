@@ -13,3 +13,38 @@ This agent uses `cron` to run the script on a daily schedule. If you are on a De
 ```bash
 sudo apt-get update
 sudo apt-get install cron
+
+---
+
+## 2. Project Setup
+
+Follow these steps to set up your Python environment and install the required packages.
+
+### A. Create a Virtual Environment
+
+It is highly recommended to use a Python virtual environment (`venv`) to keep your project dependencies isolated.
+
+1.  Navigate to your project directory.
+2.  Create the virtual environment (you can name it `venv` or anything you like):
+
+    ```bash
+    # Use python3 if your system defaults to Python 2
+    python3 -m venv venv
+    ```
+
+3.  Activate the environment:
+
+    ```bash
+    # On Linux/macOS
+    source venv/bin/activate
+    
+    # On Windows
+    .\venv\Scripts\activate
+    ```
+
+### B. Install Dependencies
+
+With your virtual environment active, install the required packages:
+
+```bash
+pip install requests beautifulsoup4 google-generativeai python-dotenv htmldate
