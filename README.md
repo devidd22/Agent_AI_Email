@@ -65,3 +65,29 @@ This agent uses a Google Gemini API.You will need to provide an API key
     ```ini
     GEMINI_API_KEY="YOUR_API_KEY_HERE"
     ```
+---
+
+## 4. Schedule the Daily Email
+
+To make this agent run automatically, you need to add a new job to your `crontab`.
+
+1.  Open your crontab editor:
+
+    ```bash
+    crontab -e
+    ```
+
+2.  Add a new line to schedule the script. This example runs the script **every day at 10:00 PM (22:00)**.
+
+    ```cron
+    # Run the AI email agent daily at 10:00 PM
+    0 22 * * * /full/path/to/your/project/venv/bin/python /full/path/to/your/project/main.py >> /home/YOUR_USERNAME/cron.log 2>&1
+    ```
+
+**Important:** You **must** replace the following placeholders:
+
+* `/full/path/to/your/project/venv/bin/python`: The **absolute path** to the Python executable *inside* your virtual environment.
+* `/full/path/to/your/project/main.py`: The **absolute path** to the main Python script.
+* `/home/YOUR_USERNAME/cron.log`: The path where you want to save the output logs (make sure `YOUR_USERNAME` is correct).
+
+Save and close the crontab file. Your agent is now scheduled to run!
