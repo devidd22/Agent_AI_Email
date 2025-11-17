@@ -1,6 +1,6 @@
 # 🤖 Agent AI Email
 
-> A simple mini-agent that uses AI to send you a daily email.
+> A simple mini-agent that uses AI to send you a daily email about the news in AI.
 
 This project is a small AI agent that runs on a schedule (using `cron`) to send you a daily email.
 
@@ -91,3 +91,5 @@ To make this agent run automatically, you need to add a new job to your `crontab
 * `/home/YOUR_USERNAME/cron.log`: The path where you want to save the output logs (make sure `YOUR_USERNAME` is correct).
 
 Save and close the crontab file. Your agent is now scheduled to run!
+
+### 4.Configuration: Change in `main.py` 
